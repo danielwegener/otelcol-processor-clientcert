@@ -1,6 +1,12 @@
 # clientcert processor
 
-Extracts mTLS peer certificate fields from the gRPC connection context and writes them as resource attributes on every telemetry signal (traces, metrics, logs) passing through the pipeline.
+[![CI](https://github.com/danielwegener/otelcol-processor-clientcert/actions/workflows/ci.yml/badge.svg)](https://github.com/danielwegener/otelcol-processor-clientcert/actions/workflows/ci.yml)
+[![Go Reference](https://pkg.go.dev/badge/github.com/danielwegener/otelcol-processor-clientcert.svg)](https://pkg.go.dev/github.com/danielwegener/otelcol-processor-clientcert)
+[![Go Report Card](https://goreportcard.com/badge/github.com/danielwegener/otelcol-processor-clientcert)](https://goreportcard.com/report/github.com/danielwegener/otelcol-processor-clientcert)
+[![codecov](https://codecov.io/gh/danielwegener/otelcol-processor-clientcert/branch/main/graph/badge.svg)](https://codecov.io/gh/danielwegener/otelcol-processor-clientcert)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
+
+Extracts mTLS peer certificate fields from the gRPC connection context and writes them as resource attributes on every telemetry signal (traces, metrics, logs, profiles) passing through the pipeline.
 
 Because the values come from the server-verified TLS handshake, they cannot be forged by the sending process — unlike application-asserted resource attributes such as `service.instance.id`.
 
