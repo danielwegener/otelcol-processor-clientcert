@@ -1,4 +1,4 @@
-# clientcert processor
+# Clientcert processor
 
 [![CI](https://github.com/danielwegener/otelcol-processor-clientcert/actions/workflows/ci.yml/badge.svg)](https://github.com/danielwegener/otelcol-processor-clientcert/actions/workflows/ci.yml)
 [![Go Reference](https://pkg.go.dev/badge/github.com/danielwegener/otelcol-processor-clientcert.svg)](https://pkg.go.dev/github.com/danielwegener/otelcol-processor-clientcert)
