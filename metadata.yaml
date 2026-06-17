@@ -1,0 +1,10 @@
+type: clientcert
+scope_name: github.com/danielwegener/otelcol-processor-clientcert
+
+status:
+  class: processor
+  stability:
+    development: [traces, metrics, logs]
+  distributions: []
+  codeowners:
+    active: [danielwegener]

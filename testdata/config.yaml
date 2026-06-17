@@ -1,0 +1,19 @@
+# Minimal config — extract only the CN (default).
+processors:
+  clientcert:
+
+# Full config — extract multiple fields, drop signals with no cert.
+processors/full:
+  clientcert:
+    attributes:
+      - target_key: tls.client.cn
+        source: subject_cn
+      - target_key: tls.client.san
+        source: subject_alt_names
+      - target_key: tls.client.issuer
+        source: issuer_cn
+      - target_key: tls.client.fingerprint
+        source: sha256_fingerprint
+      - target_key: tls.client.expiry
+        source: not_after
+    on_missing_cert: drop
