@@ -7,8 +7,6 @@ linters:
     - ineffassign
     - misspell
     - staticcheck
-    - unused
-    - gosimple
     - bodyclose
     - noctx
   settings:
